@@ -1,0 +1,14 @@
+version: '3'
+services:
+  reacty:
+    image: node:17-bullseye
+    container_name: reacty
+    ports:
+      - 3000:3000
+    volumes:
+      - reacty-volume:/workspace
+      - reacty-vscode-extension-volume:/root/.vscode-server/extensions
+
+volumes:
+  reacty-volume:
+  reacty-vscode-extension-volume:
