@@ -5,9 +5,10 @@ services:
     container_name: reacty
     ports:
       - 3000:3000
+    user: node
     volumes:
       - reacty-volume:/workspace
-      - reacty-vscode-extension-volume:/root/.vscode-server/extensions
+      - reacty-vscode-extension-volume:/node/.vscode-server/extensions
 
 volumes:
   reacty-volume:
