@@ -16,7 +16,9 @@
 	// connected. This is typically a file mount in .devcontainer/docker-compose.yml
 	"workspaceFolder": "/workspace",
 	// Set *default* container specific settings.json values on container create.
-	"settings": {},
+	"settings": {
+		"liveServer.settings.CustomBrowser": "firefox"
+	},
 	"features": {
 		"Git": "latest"
 	},
@@ -24,7 +26,8 @@
 	"extensions": [
 		"ms-azuretools.vscode-docker",
 		"dbaeumer.vscode-eslint",
-		"esbenp.prettier-vscode"
+		"esbenp.prettier-vscode",
+		"ritwickdey.LiveServer"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
